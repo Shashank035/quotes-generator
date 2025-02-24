@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to bottom right, #33ccff, #ff99cc);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-top: 50px;
+}
+
+.quote-container {
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#quote {
+    font-size: 18px;
+    font-style: italic;
+}
+
+#author {
+    font-size: 16px;
+    color: #666;
+}
+
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#generateButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#generateButton:hover {
+    background-color: #3e8e41;
+}
+
+#tweetButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1DA1F2;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#tweetButton:hover {
+    background-color: #1a91da;
+}
+
+/* Animation for Quote Generation */
+.quote-container {
+    transition: transform 0.5s ease;
+}
+
+.quote-container.animate {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
